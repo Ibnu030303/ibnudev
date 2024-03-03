@@ -13,6 +13,25 @@
       crossorigin="anonymous"
     />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
@@ -51,13 +70,229 @@
 
     <!-- Hero Section Start -->
     <section class="hero" id="hero">
-      <div class="container">
-        <div class="content d-flex align-items-center baseline">
-          <h2>Hello, I'm Frontend Developer</h2>
+      <div class="container d-flex align-items-center">
+        <div class="content border">
+          <h3>Hello, I'm Ibnu Nurdiyansa</h3>
+          <p>I'm Frontend Developer</p>
+          <p class="quote">
+            "creating a User Interface that is user friendly, easy to use and
+            supports all devices"
+          </p>
+          <div class="sosmed border border-success">
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+          <button class="btn btn-primary shadow mt-4">Download CV</button>
         </div>
       </div>
     </section>
     <!-- Hero Section END -->
+
+    <!-- About me Section Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content d-flex gap-5">
+          <img src="assets/img/me.png" alt="me" class="shadow" />
+          <div class="about-content">
+            <h2 class="mb-4">About Me</h2>
+            <p>
+              "I am a Fresh Graduate from the Software Engineering Vocational
+              School located in Kab. Tangerang. Where I have skills in creating
+              a web application, both the frontend using Vue.JS and also the
+              backend using Laravel. As proof I've made several private and open
+              source projects which can be seen on my github profile."
+            </p>
+            <button class="btn btn-primary shadow">
+              <i class="bi bi-whatsapp"> </i> Contack Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About me Section END -->
+
+    <!-- Skills Section Start -->
+    <section class="skils" id="skils">
+      <div class="container-sm">
+        <div class="col-12 text-center">
+          <h2 class="mb-4">Skills</h2>
+        </div>
+        <div class="logo-slider">
+          <div class="item">
+            <a href="">
+              <img
+                src="assets/img/bootstrap-logo-shadow.png"
+                alt="BootstrapIcons"
+            /></a>
+          </div>
+          <div class="item">
+            <a href=""> <img src="assets/img/figma.png" alt="FigmaIcons" /></a>
+          </div>
+          <div class="item">
+            <a href=""> <img src="assets/img/php.png" alt="PHPicons" /></a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="assets/img/laravel.svg" alt="LaravelIcons"
+            /></a>
+          </div>
+          <div class="item">
+            <a href=""> <img src="assets/img/logo.png" alt="VueIcons" /></a>
+          </div>
+          <div class="item">
+            <a href=""> <img src="assets/img/js.png" alt="JSicons" /></a>
+          </div>
+          <div class="item">
+            <a href=""> <img src="assets/img/css.png" alt="CSSicons" /></a>
+          </div>
+          <div class="item">
+            <a href=""> <img src="assets/img/html-5.png" alt="HTMLicons" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section END -->
+
+    <!-- Project Section Start -->
+    <section class="project" id="project">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="mb-5">My Project</h2>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/Tour Guid.png"
+              class="card-img-top"
+              alt="Project1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">TOUR GUID</h5>
+              <p class="card-text">
+                landing page for tour and travel service providers as well as
+                information on tourist attractions and tour guide rentals
+              </p>
+              <a href="#" class="btn btn-primary"
+                ><i class="me-2 bi bi-github"></i>Source Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="assets/img/TK.png" class="card-img-top" alt="Project1" />
+            <div class="card-body">
+              <h5 class="card-title">SCHOOL TK AR RAHMAN</h5>
+              <p class="card-text">
+                Kindergarten school web landing page which contains information
+                about the school, teachers and vision and mission
+              </p>
+              <a href="#" class="btn btn-primary"
+                ><i class="me-2 bi bi-github"></i>Source Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/Tabunagn.png"
+              class="card-img-top"
+              alt="Project1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">TABUNGAN SISWA</h5>
+              <p class="card-text">
+                Website-based student savings web application with features for
+                saving, withdrawing balances, and printing savings reports
+              </p>
+              <a href="#" class="btn btn-primary"
+                ><i class="me-2 bi bi-github"></i>Source Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/admin.png"
+              class="card-img-top"
+              alt="Project1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">CRUD PHP</h5>
+              <p class="card-text">
+                CRUD system web application using PHP which can add data, update
+                and delete data
+              </p>
+              <a href="#" class="btn btn-primary"
+                ><i class="me-2 bi bi-github"></i>Source Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/Shoop.png"
+              class="card-img-top"
+              alt="Project1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">COFFE SHOOP</h5>
+              <p class="card-text">
+                coffee shop website by providing menu list information, prices
+                and also shopping basket features
+              </p>
+              <a href="#" class="btn btn-primary"
+                ><i class="me-2 bi bi-github"></i>Source Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <button
+          class="load-more btn btn-outline-primary rounded-pill shadow mt-4"
+        >
+          Readmore
+        </button>
+      </div>
+    </section>
+    <!-- Project Section END -->
+
+    <!-- Footer -->
+    <footer class="text-center pt-3 pb-3 bg-dark text-light">
+      <div class="container">
+        <div class="form-check form-switch d-flex justify-content-center">
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >LIGHT MODE</label
+          >
+          <input
+            class="form-check-input ms-4"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label ms-4 me-5" for="flexSwitchCheckChecked"
+            >DARK MODE</label
+          >
+        </div>
+        <div class="contack mt-4">
+          <h4 class="mb-3">Contack Me on</h4>
+          <a href=""><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+          <a href=""><i class="bi bi-envelope me-2"></i>Email</a>
+        </div>
+        <hr />
+        <p class="mt-4">2024 - Ibnu Nurdiyansa</p>
+      </div>
+    </footer>
+    <!-- Footer END-->
+
+    <!-- Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
     <!-- Bootstrap -->
     <script
@@ -65,5 +300,48 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var imagesToShow = 3; // Jumlah gambar yang ditampilkan setiap kali tombol "load more" ditekan
+
+        $(".card").slice(0, imagesToShow).fadeIn();
+
+        $(".load-more").click(function () {
+          var hiddenImages = $(".card:hidden");
+
+          hiddenImages.slice(0, 12).fadeIn(); // Menampilkan gambar yang tersembunyi sebanyak yang ditentukan
+
+          if (hiddenImages.length == 0) {
+            $(".load-more").text("Close More").toggleClass("close-more"); // Mengubah teks dan kelas tombol menjadi "close-more" jika semua gambar sudah ditampilkan
+          }
+        });
+
+        $(document).on("click", ".close-more", function () {
+          $(".card").slice(imagesToShow).fadeOut(); // Menyembunyikan gambar yang sudah ditampilkan setelah gambar awal
+          $(".load-more").text("READMORE").removeClass("close-more"); // Mengembalikan teks dan menghapus kelas "close-more" dari tombol "load-more"
+        });
+      });
+
+      $(document).ready(function () {
+        $(".logo-slider").slick({
+          slidesToShow: 5, // Menampilkan 5 gambar secara default
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          infinite: true,
+          responsive: [
+            {
+              breakpoint: 768, // Ketika lebar layar mencapai 768px (ukuran mobile)
+              settings: {
+                slidesToShow: 3, // Mengubah menjadi hanya menampilkan 3 gambar
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
