@@ -6,6 +6,48 @@ toggleButton.addEventListener("click", function () {
   navbar.classList.toggle("navbar-dark");
 });
 
+// Fungsi untuk menampilkan atau menyembunyikan navbar
+let prevScrollPos = window.pageYOffset;
+
+function toggleNavbar() {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0"; // Munculkan navbar saat menggulir ke atas
+  } else {
+    navbar.style.top = "-50px"; // Sembunyikan navbar saat menggulir ke bawah
+  }
+  prevScrollPos = currentScrollPos;
+}
+
+window.addEventListener("scroll", toggleNavbar);
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  // Mulai Typed.js
+  var typed = new Typed("#typed", {
+    strings: ["Ibnu Nurdiyansa"],
+    typeSpeed: 70,
+    showCursor: false,
+    backDelay: false,
+    fadeOut: true,
+    loop: false,
+    onComplete: function () {
+      // Setelah selesai mengetik "Ibnu Nurdiyansa", jalankan Typed untuk mengetik "Frontend Developer"
+      var typedFrontend = new Typed("#typed2", {
+        strings: ["Frontend Developer"],
+        typeSpeed: 70,
+        showCursor: false,
+        backDelay: false,
+        fadeOut: true,
+        loop: false, // Set loop menjadi false agar tidak mengulang ketika selesai
+        onComplete: function () {
+          // Setelah selesai mengetik "Frontend Developer", kembali memulai Typed pertama
+          typed.reset();
+        },
+      });
+    },
+  });
+}
+
 $(document).ready(function () {
   var imagesToShow = 3; // Jumlah gambar yang ditampilkan setiap kali tombol "load more" ditekan
 
