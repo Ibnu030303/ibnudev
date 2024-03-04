@@ -3,6 +3,8 @@
 
 :root {
   --bg-color: rgba(255, 17, 255, 0.058);
+  --dark-mode: #333;
+  --text-dark: #fff;
 }
 
 * {
@@ -14,10 +16,17 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
 }
 
-section {
-  background-color: var(--bg-color);
+.dark-mode {
+  background-color: var(--dark-mode);
+  color: var(--text-dark);
+}
+
+.dark-mode .card {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 h2 {
@@ -78,6 +87,11 @@ h2 {
   border-radius: 7%;
 }
 
+.about .about-content p {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
 .skils img {
   width: 7rem;
   height: 7rem;
@@ -116,8 +130,13 @@ h2 {
   height: 15rem;
 }
 
-.load-more:hover {
+.project .load-more {
+  animation: upDown 4s infinite;
+}
+
+.project .load-more:hover {
   opacity: 0.8;
+  transition: 0.8s all;
 }
 
 footer .contack a {
@@ -139,6 +158,13 @@ footer p {
 /* Responsive */
 
 /* Laptop */
+@media (max-width: 1024px) {
+  .hero .content {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ffb22e;
+  }
+}
 
 /* Tablet */
 @media (max-width: 768px) {
@@ -160,3 +186,17 @@ footer p {
 }
 
 /* Mobile */
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
