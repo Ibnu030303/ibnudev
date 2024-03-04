@@ -49,7 +49,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="bi bi-list-stars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto text-uppercase">
@@ -57,10 +57,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contack</a>
+              <a class="nav-link" href="#project">My Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contack</a>
             </li>
           </ul>
         </div>
@@ -264,7 +267,7 @@
     <!-- Project Section END -->
 
     <!-- Footer -->
-    <footer class="text-center pt-3 pb-3 bg-dark text-light">
+    <footer class="text-center pt-3 pb-3 bg-dark text-light" id="footer">
       <div class="container">
         <div class="form-check form-switch d-flex justify-content-center">
           <label class="form-check-label" for="flexSwitchCheckChecked"
@@ -303,45 +306,5 @@
 
     <script src="assets/js/script.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        var imagesToShow = 3; // Jumlah gambar yang ditampilkan setiap kali tombol "load more" ditekan
-
-        $(".card").slice(0, imagesToShow).fadeIn();
-
-        $(".load-more").click(function () {
-          var hiddenImages = $(".card:hidden");
-
-          hiddenImages.slice(0, 12).fadeIn(); // Menampilkan gambar yang tersembunyi sebanyak yang ditentukan
-
-          if (hiddenImages.length == 0) {
-            $(".load-more").text("Close More").toggleClass("close-more"); // Mengubah teks dan kelas tombol menjadi "close-more" jika semua gambar sudah ditampilkan
-          }
-        });
-
-        $(document).on("click", ".close-more", function () {
-          $(".card").slice(imagesToShow).fadeOut(); // Menyembunyikan gambar yang sudah ditampilkan setelah gambar awal
-          $(".load-more").text("READMORE").removeClass("close-more"); // Mengembalikan teks dan menghapus kelas "close-more" dari tombol "load-more"
-        });
-      });
-
-      $(document).ready(function () {
-        $(".logo-slider").slick({
-          slidesToShow: 5, // Menampilkan 5 gambar secara default
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          infinite: true,
-          responsive: [
-            {
-              breakpoint: 768, // Ketika lebar layar mencapai 768px (ukuran mobile)
-              settings: {
-                slidesToShow: 3, // Mengubah menjadi hanya menampilkan 3 gambar
-              },
-            },
-          ],
-        });
-      });
-    </script>
   </body>
 </html>

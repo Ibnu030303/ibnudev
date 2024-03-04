@@ -3,8 +3,11 @@
 
 :root {
   --bg-color: rgba(255, 17, 255, 0.058);
-  --dark-mode: #333;
-  --text-dark: #fff;
+  --body-color: #010409;
+  --text-color: #eeeeec;
+  --text-color-dark: white;
+  --white-color: #16171d;
+  --light-color: var(--dark-light-color);
 }
 
 * {
@@ -20,12 +23,28 @@ body {
 }
 
 .dark-mode {
-  background-color: var(--dark-mode);
-  color: var(--text-dark);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.dark-mode .navbar {
+  color: var(--text-color);
+}
+
+.dark-mode #about {
+  background-color: var(--body-color);
+}
+
+.dark-mode #skils {
+  background-color: var(--white-color);
+}
+
+.dark-mode #project {
+  background-color: var(--body-color);
 }
 
 .dark-mode .card {
-  background-color: transparent;
+  background-color: var(--white-color);
   box-shadow: none;
 }
 
@@ -66,11 +85,6 @@ h2 {
   font-weight: 400;
 }
 
-.custom-tooltip {
-  --bs-tooltip-bg: var(--bd-primary);
-  --bs-tooltip-color: var(--bs-white);
-}
-
 .hero .sosmed a {
   margin-right: 2rem;
   font-size: 1.7rem;
@@ -78,7 +92,7 @@ h2 {
 
 #about,
 #project {
-  padding: 5%;
+  padding: 5% 0;
 }
 
 .about img {
@@ -90,6 +104,11 @@ h2 {
 .about .about-content p {
   font-size: 1.2rem;
   line-height: 2.4rem;
+}
+
+#skils {
+  background-color: #f3f3f3;
+  padding-top: 10px;
 }
 
 .skils img {
@@ -162,7 +181,6 @@ footer p {
   .hero .content {
     width: 100%;
     text-align: center;
-    border: 1px solid #ffb22e;
   }
 }
 
@@ -186,6 +204,32 @@ footer p {
 }
 
 /* Mobile */
+@media (max-width: 456px) {
+  #hero {
+    background-image: none;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(95, 191, 153, 1) 28%,
+      rgba(45, 253, 104, 1) 100%
+    );
+    height: auto;
+  }
+
+  /* .dark-mode #hero {
+    background: none;
+    background-color: var(--white-color);
+  } */
+
+  .hero .content button {
+    font-size: 1.3rem;
+  }
+
+  .about .about-content button {
+    font-size: 1.3rem;
+  }
+}
 
 @keyframes upDown {
   0% {
