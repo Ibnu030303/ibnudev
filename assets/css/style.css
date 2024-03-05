@@ -193,25 +193,6 @@ footer p {
 
 /* Tablet */
 @media (max-width: 768px) {
-  #about,
-  #project {
-    padding: 10%;
-  }
-
-  .about-content {
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-
-  .project .card {
-    width: 100%;
-    margin: 1rem 0;
-  }
-}
-
-/* Mobile */
-@media (max-width: 456px) {
   #hero {
     background-image: none;
     background: rgb(34, 193, 195);
@@ -228,8 +209,46 @@ footer p {
     font-size: 1.3rem;
   }
 
+  #about,
+  #project {
+    padding: 10% 0;
+  }
+
+  .about-content {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+@media (max-width: 456px) {
+  .about img {
+    width: 85%;
+    height: 70%;
+  }
+
+  .about .about-content p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
   .about .about-content button {
-    font-size: 1.3rem;
+    font-size: 0.7rem;
+  }
+
+  .skils img {
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+  }
+
+  .skils .logo-slider .slick-slide {
+    margin: 10px;
+  }
+
+  .project .card {
+    width: 80%;
   }
 }
 
