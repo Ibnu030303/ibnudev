@@ -223,6 +223,15 @@ footer p {
 
 /* Mobile */
 @media (max-width: 456px) {
+  .hero .sosmed {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .sosmed a {
+    margin: 0 1rem;
+  }
+
   .about img {
     width: 85%;
     height: 70%;
