@@ -19,12 +19,14 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
+  transition: 0.5s;
 }
 
 /* Dark Mode */
 .dark-mode {
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: 0.5s;
 }
 
 .dark-mode .navbar {
