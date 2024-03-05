@@ -25,7 +25,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   // Mulai Typed.js
   var typed = new Typed("#typed", {
     strings: ["Ibnu Nurdiyansa"],
-    typeSpeed: 70,
+    typeSpeed: 85,
     showCursor: false,
     backDelay: false,
     fadeOut: true,
@@ -34,7 +34,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
       // Setelah selesai mengetik "Ibnu Nurdiyansa", jalankan Typed untuk mengetik "Frontend Developer"
       var typedFrontend = new Typed("#typed2", {
         strings: ["Frontend Developer"],
-        typeSpeed: 70,
+        typeSpeed: 85,
         showCursor: false,
         backDelay: false,
         fadeOut: true,

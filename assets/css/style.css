@@ -7,7 +7,6 @@
   --text-color: #eeeeec;
   --text-color-dark: white;
   --white-color: #16171d;
-  --light-color: var(--dark-light-color);
 }
 
 * {
@@ -22,13 +21,14 @@ body {
   background-color: var(--bg-color);
 }
 
+/* Dark Mode */
 .dark-mode {
   background-color: var(--body-color);
   color: var(--text-color);
 }
 
 .dark-mode .navbar {
-  color: var(--text-color);
+  color: var(--text-color-dark);
 }
 
 .dark-mode #about {
@@ -45,11 +45,14 @@ body {
 
 .dark-mode .card {
   background-color: var(--white-color);
-  box-shadow: none;
+  box-shadow: -8px 21px 18px -8px rgb(255, 255, 255);
+  -webkit-box-shadow: -8px 21px 18px -8px rgb(255, 255, 255);
+  -moz-box-shadow: -8px 21px 18px -8px rgb(255, 255, 255);
 }
 
 .navbar {
   transition: top 0.5s;
+  font-weight: 600;
 }
 
 h2 {
@@ -220,11 +223,6 @@ footer p {
     );
     height: auto;
   }
-
-  /* .dark-mode #hero {
-    background: none;
-    background-color: var(--white-color);
-  } */
 
   .hero .content button {
     font-size: 1.3rem;
